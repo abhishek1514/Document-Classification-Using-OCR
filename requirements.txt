@@ -1,0 +1,8 @@
+streamlit>=1.57
+pandas
+scikit-learn
+joblib
+pymupdf
+pillow
+numpy
+rapidocr-onnxruntime

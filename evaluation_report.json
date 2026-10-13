@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "evaluation_split": "stratified 20% holdout; licensed public Invoice/Receipt image corpora plus synthetic-derived electricity-bill text, random_state=42",
+  "test_documents": 319,
+  "training_documents": 1273,
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "per_class": {
+    "Invoice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 60
+    },
+    "Receipt": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 59
+    },
+    "Bill": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200
+    }
+  },
+  "confusion_matrix_labels": [
+    "Invoice",
+    "Receipt",
+    "Bill"
+  ],
+  "confusion_matrix": [
+    [
+      60,
+      0,
+      0
+    ],
+    [
+      0,
+      59,
+      0
+    ],
+    [
+      0,
+      0,
+      200
+    ]
+  ],
+  "misclassified_documents": 0,
+  "label_quality_caveat": "Invoice/Receipt labels come from the cited public datasets. Bill examples are synthetic text rendered from Kaggle's synthetic electricity billing records, not scanned/OCR bill documents. Holdout metrics do not establish generalization to real utility bills, unfamiliar layouts, or languages."
+}

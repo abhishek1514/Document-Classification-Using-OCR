@@ -1,0 +1,60 @@
+{
+  "model_type": "TF-IDF + LogisticRegression",
+  "classes": [
+    "Invoice",
+    "Receipt",
+    "Bill"
+  ],
+  "label_quality": "Invoice/Receipt: verified public image labels; Bill: synthetic-derived text, not OCR document images",
+  "bill_training_source": "rahibvk/new-york-household-electricity-bills",
+  "bill_training_license": "CC BY-SA 4.0",
+  "bill_training_examples": 1000,
+  "bill_class_supported": true,
+  "bill_input_domain": "synthetic-derived text; real bill-image accuracy unvalidated",
+  "train_counts": {
+    "Invoice": 240,
+    "Receipt": 233,
+    "Bill": 800
+  },
+  "holdout_counts": {
+    "Invoice": 60,
+    "Receipt": 59,
+    "Bill": 200
+  },
+  "holdout_accuracy_against_source_labels": 1.0,
+  "holdout_classification_report": {
+    "Invoice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 60.0
+    },
+    "Receipt": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 59.0
+    },
+    "Bill": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 319.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 319.0
+    }
+  },
+  "random_state": 42,
+  "test_size": 0.2
+}
